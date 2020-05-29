@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+ 
+<html>
+<head>
+      <title>Spring Boot - POST-GET AJAX Example</title>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <script src="/js/jquery-2.1.1.min.js"></script>
+      <script src="/js/postrequest.js"></script>
+      <script src="/js/getrequest.js"></script>
+      <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" />
+</head>
+<body>
+	<div class="container">
+		<h1>Cart</h1>
+		<div id="postdiv">
+			<form id="itemForm">
+				<label>itemId</label><input type="text" id="itemId" class="form-control" /> 
+					
+				<label>item_Name</label><input type="text" id="item_Name" class="form-control" /> 
+					
+				<label>quantity</label><input type="text" id="quantity" class="form-control" />
+				
+				<label>description</label><input type="text" id="description" class="form-control" /> 
+					
+				<label>cost</label><input type="text" id="cost" class="form-control" /> 
+					
+				<label>category_Id</label><input type="text" id="category_Id" class="form-control" />
+				
+				<label>discount</label><input type="text" id="discount" class="form-control" /> 
+					
+				<label>pic</label><input type="text" id="pic" class="form-control" /> 
+					
+				<label>dateOfExpiry</label><input type="text" id="dateOfExpiry" class="form-control" />
+					
+					
+				<button type="submit" id="postBtn" class="btn btn-primary">Submit</button>
+			</form>
+		</div>
+		<div id="postResultDiv"></div>
+		<br />
+		<div id="getdiv">
+			<button id="getBtn">Get All Items</button>
+		</div>
+		<div id="getResultDiv">
+			<ul class="list-group">
+			</ul>
+		</div>
+
+	</div>
+</body>
+</html>
